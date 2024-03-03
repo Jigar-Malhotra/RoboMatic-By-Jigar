@@ -1,0 +1,127 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the button with ID clearChat */
+#clearChat {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* White font color */
+    background: linear-gradient(to right, #3498db, #2980b9); /* Bluish gradient theme */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  #clearChat:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Reversed gradient colors on hover */
+    transform: scale(1.05); /* Scale the button on hover for animation */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+    color: #ffffff; /* White font color on hover */
+  }
+  
+  /* Additional hover effect */
+  #clearChat:hover::before {
+    content: '\2716'; /* Unicode heavy multiplication x character */
+    margin-right: 5px;
+    transform: translateX(-5px);
+  }
+
+  /* Style for the input field */
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .input{
+    position: absolute;
+    bottom: 10%;
+    left: 23%;
+    width: 60%;
+  }
+  
+  /* Hover effect for the input field */
+  .input-field:hover,
+  .input-field:focus {
+    border-color: #3498db; /* Change border color on hover/focus */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  #chats{
+    margin: auto;
+    max-width: 75%;
+    padding: 15px 0;
+    /* background-color: red; */
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .card{
+    max-width: 300px;
+  }
+
+  .user{
+    color: white;
+    background-color: blue;
+  }
+
+  .bot{
+    display: flex;
+    justify-content: right;
+  }
+
+  .botchat{
+    background-color: #45a049;
+    color: white;
+  }
+
+  .hide{
+    opacity: 0;
+  }
+
+  /* Style for the button with class btn */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* White font color */
+    background: linear-gradient(to right, #4CAF50, #45a049); /* Gradient effect */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50); /* Gradient effect on hover */
+    transform: scale(1.05); /* Scale the button on hover for a subtle animation */
+  }
+
+  /* Style for the button with ID voice */
+#voice {
+  padding: 10px 20px;
+  background-color: #e74c3c; /* Red color, you can customize this */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button with ID voice */
+#voice:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+  
